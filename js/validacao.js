@@ -41,3 +41,9 @@ function valorExato(numero) {
 function valorMaior(numero) {
   return numero > numeroSecreto;
 }
+
+document.body.addEventListener('click', e => {
+  if (e.target.id == 'jogar-novamente') {
+    window.location.reload();
+  }
+})
