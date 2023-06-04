@@ -3,6 +3,7 @@
 :root {
   --font-family: 'Geologica', sans-serif;
   --bg-color: #FBFFDC;
+  --bg-game-over: #000;
   --primary-color: #79E0EE;
 }
 

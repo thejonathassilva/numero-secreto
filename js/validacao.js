@@ -1,4 +1,13 @@
 function verificaSeOChutePossuiUmValorValido(chute) {
+  if(gameOver(chute)) {
+    document.body.style.backgroundColor = 'var(--bg-game-over)';
+    document.body.innerHTML = `
+      <h1>GAME OVER</h1>
+
+      <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+    `
+  }
+
   const numero = +chute;
 
   if (chuteForInvalido(numero)) {
@@ -47,3 +56,7 @@ document.body.addEventListener('click', e => {
     window.location.reload();
   }
 })
+
+function gameOver(chute) {
+  return chute === 'game over';
+}
